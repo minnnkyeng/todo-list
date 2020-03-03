@@ -1,0 +1,9 @@
+*{
+    outline:1px solid red; 
+}
+
+#time{
+    color:#222;
+    font-size:500%;
+    text-align:center;
+}
