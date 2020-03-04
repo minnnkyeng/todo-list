@@ -16,7 +16,7 @@ function getTime(){
     const minute = time.getMinutes()<10 ? "0"+time.getMinutes() : time.getMinutes();
     const second = time.getSeconds()<10 ? "0"+time.getSeconds() : time.getSeconds();
         
-    currentTime.innerText = `${hour<10?`0${hour}`:hour}:${minute<10?`0${minute}`:minute}:${second<10?`0${second}`:second}`;
+    currentTime.innerText = `${hour}:${minute}:${second}`;
 }
 
 function init(){
