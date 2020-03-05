@@ -1,13 +1,19 @@
 const currentTime = document.getElementById('time');
 const currentDate = document.getElementById('date');
 
+function getDayOfWeek(day){
+    const week = new Array('Sun','Mon','Tue','Wed','Thu','Fri','Sat');
+    return week[day]
+}
+
 function getToday(){
     const date = new Date();
     const year = date.getFullYear();
     const month = date.getMonth();
     const day = date.getDay();
+    const dayOfWeek = getDayOfWeek(date.getDate());
 
-    currentDate.innerText = `${year}.${month<10?`0${month}`:month}.${day<10?`0${day}`:day}`;
+    currentDate.innerText = `${year}.${month<10?`0${month}`:month}.${day<10?`0${day}`:day}.${dayOfWeek}`;
 }
 
 function getTime(){
