@@ -9,9 +9,9 @@ function getDayOfWeek(day){
 function getToday(){
     const date = new Date();
     const year = date.getFullYear();
-    const month = date.getMonth();
-    const day = date.getDay();
-    const dayOfWeek = getDayOfWeek(date.getDate());
+    const month = date.getMonth()+1;
+    const day = date.getDate();
+    const dayOfWeek = getDayOfWeek(date.getDay());
 
     currentDate.innerText = `${year}.${month<10?`0${month}`:month}.${day<10?`0${day}`:day}.${dayOfWeek}`;
 }
