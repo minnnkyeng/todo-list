@@ -59,6 +59,24 @@ html, body {
     background-color:#fff;
 }
 
+#todo{
+    border:0px;
+    border-bottom:1px solid #0F4C81;
+    margin:10px 0;
+    padding: 10px 30px;
+}
+
+#todo:focus{
+   outline:0px;
+}
+
+#todoList{
+    color:#222;    
+}
+
+#todoList li{
+    line-height:30px;
+}
 
 .mt5{
     margin-top:10px;
